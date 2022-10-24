@@ -1,5 +1,5 @@
     body {
-        background-color: #B14806;
+        background-image: linear-gradient(#B14806, #F66A13);
         margin: 0;
         padding: 0;
         font-family: 'Inter', sans-serif;
@@ -176,7 +176,7 @@
     
     footer h6 {
         text-align: center;
-        font-size: 150%;
+        font-size: 110%;
         margin: 20px 0px 0px 0px;
         padding: 15px 0px;
     }
