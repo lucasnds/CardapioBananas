@@ -5,7 +5,7 @@
                             }
                             
                             body {
-                                background-image: linear-gradient(#B14806, #F66A13);
+                                background-image: linear-gradient(#B14806, #361532);
                                 margin: 0 auto;
                                 padding: 0;
                                 font-family: 'Inter', sans-serif;
@@ -22,6 +22,20 @@
                                 text-shadow: 0.3px 0.3px 0.2px #000;
                             }
                             /* __________________GERAL_______________________ */
+                            
+                            nav ul a {
+                                text-decoration: none;
+                                font-size: 1.2rem;
+                                font-family: 'Inter';
+                                color: #231123;
+                                font-weight: 700;
+                                padding: 0% 5%;
+                                text-align: center;
+                            }
+                            
+                            nav ul a:hover {
+                                color: #EFF7FF;
+                            }
                             /* __________________HEADER_______________________ */
                             /* header {
                                 position: fixed;
@@ -67,7 +81,14 @@
                             }
                             /* __________________PARTE01 - BEBIDAS_______________________ */
                             
-                            .Parte01 {
+                            .Parte01,
+                            .Parte02,
+                            .Parte04,
+                            .Parte06,
+                            .Parte07,
+                            .Parte08,
+                            .Parte05,
+                            .Parte03 {
                                 width: 90%;
                                 display: block;
                                 margin: 0 auto;
@@ -90,26 +111,27 @@
                                 align-items: center;
                                 justify-content: space-between;
                                 padding: 0% 5%;
+                                margin-top: 5%;
                             }
                             
                             .topo-descricao h2 {
                                 color: #231123;
-                                font-size: 1.2rem;
+                                font-size: 1.3rem;
                             }
                             
                             .nomes-produtos h3,
                             .precos h3 {
                                 color: #231123;
                                 font-weight: 800;
-                                font-size: 1.1rem;
-                                margin: 10px 5px;
+                                font-size: 1.2rem;
+                                margin: 12px 5px;
                             }
                             /* __________RED BULL_________ */
                             
                             .precos-redbull h3 {
                                 color: #EFF7FF;
                                 font-weight: 800;
-                                font-size: 1.1rem;
+                                font-size: 1.2rem;
                                 margin: 12px 5px;
                             }
                             
@@ -118,8 +140,7 @@
                                 background-color: #B14806;
                                 border-radius: 10px;
                             }
-                            
-                            .energia-extra {
+                            /* .energia-extra {
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
@@ -128,7 +149,7 @@
                             .energia-extra h3 {
                                 color: #EFF7FF;
                                 font-size: 1.2rem;
-                            }
+                            } */
                             
                             .fundo-roxo {
                                 background-color: #231123;
@@ -137,6 +158,7 @@
                                 justify-content: space-between;
                                 margin-top: -10px;
                                 padding: 3% 5% 3% 5%;
+                                align-items: center;
                             }
                             
                             .precos-redbull img {
@@ -146,7 +168,7 @@
                             .nomes-produtos-redbull h3 {
                                 color: #EFF7FF;
                                 font-weight: 800;
-                                font-size: 1.1rem;
+                                font-size: 1.2rem;
                                 margin: 12px 5px;
                             }
                             
@@ -155,16 +177,10 @@
                             }
                             /* ________PARTE02 - SALADA DE FRUTA */
                             
-                            .Parte02 {
-                                width: 90%;
-                                display: block;
-                                margin: 0 auto;
-                            }
-                            
                             .copos h5 {
                                 color: #B14806;
                                 font-weight: 800;
-                                font-size: 155%;
+                                font-size: 1.2rem;
                                 margin: 12px 5px;
                                 padding: 2.5px 0px;
                             }
@@ -195,6 +211,7 @@
                                 align-items: center;
                                 justify-content: space-between;
                                 padding: 0% 5%;
+                                margin-top: 5%;
                             }
                             
                             .topo-descricao-salada h2 {
@@ -207,16 +224,10 @@
                             }
                             /* ______________SUCOS____________ */
                             
-                            .Parte04 {
-                                width: 90%;
-                                display: block;
-                                margin: 0 auto;
-                            }
-                            
                             .titulos-caixas {
                                 text-align: center;
                                 color: #EFF7FF;
-                                font-size: 1.2rem;
+                                font-size: 1.8rem;
                             }
                             
                             .fundo-branco h6 {
@@ -229,6 +240,106 @@
                                 display: grid;
                                 grid-template-columns: repeat(2, 1fr);
                                 gap: 10px;
+                            }
+                            
+                            .volume h3 {
+                                color: #EFF7FF;
+                                font-weight: 800;
+                                font-size: 1.2rem;
+                                margin: 0;
+                            }
+                            
+                            .precos-suco {
+                                background-color: #B14806;
+                                border-radius: 10px;
+                            }
+                            
+                            .precos-suco h3 {
+                                color: #231123;
+                                font-weight: 700;
+                                font-size: 1.2rem;
+                                margin: 12px 5px;
+                            }
+                            
+                            #suco-laranja {
+                                margin-top: 25%;
+                            }
+                            
+                            .nomes-produtos-sucos h3 {
+                                color: #231123;
+                                font-weight: 800;
+                                font-size: 1.2rem;
+                                margin: 9% 1%;
+                            }
+                            /* ____________PARTE 05 - SALGADOS */
+                            
+                            p {
+                                color: #4682B4;
+                                font-size: 0.8rem;
+                                font-weight: 600;
+                                margin-left: 20px;
+                            }
+                            
+                            .fundo-verde {
+                                background-color: #C5D86D;
+                                border-radius: 10px;
+                                display: flex;
+                                justify-content: space-between;
+                                margin-top: -10px;
+                                padding: 3% 5% 3% 5%;
+                                align-items: center;
+                            }
+                            
+                            .precos-salgados {
+                                background-color: #B14806;
+                                border-radius: 10px;
+                            }
+                            
+                            .precos-salgados h3 {
+                                color: #231123;
+                                font-weight: 700;
+                                font-size: 1.2rem;
+                                margin: 50% 5%;
+                            }
+                            /* ________PARTE08 -ACAI___________ */
+                            /* #EBC9EA  */
+                            
+                            .fundo-rosa {
+                                background-color: #EBC9EA;
+                                border-radius: 10px;
+                                display: flex;
+                                justify-content: space-between;
+                                margin-top: -10px;
+                                padding: 3% 5% 3% 5%;
+                                align-items: center;
+                                margin-bottom: 10%;
+                            }
+                            
+                            .topo-descricao-acai {
+                                background-color: #C5D86D;
+                                border-radius: 10px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                padding: 0% 5%;
+                                margin-top: 5%;
+                            }
+                            
+                            .topo-descricao-acai h2 {
+                                color: #231123;
+                                font-size: 1.3rem;
+                            }
+                            
+                            .precos-acai h3 {
+                                color: #231123;
+                                font-weight: 800;
+                                font-size: 1.2rem;
+                                margin: 12px 5px;
+                            }
+                            
+                            .precos-acai {
+                                background-color: #C5D86D;
+                                border-radius: 10px;
                             }
                             /* ________FOOTER___________ */
                             
@@ -254,4 +365,5 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
+                                gap: 5px;
                             }
