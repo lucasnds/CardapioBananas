@@ -21,6 +21,11 @@
                             h6 {
                                 text-shadow: 0.3px 0.3px 0.2px #000;
                             }
+                            /* __________________GERAL_______________________ */
+                            /* __________________HEADER_______________________ */
+                            /* header {
+                                position: fixed;
+                            } */
                             
                             header img {
                                 width: 95%;
@@ -28,6 +33,9 @@
                                 display: block;
                                 margin: 0 auto;
                                 margin-top: 3%;
+                                height: 80px;
+                                max-width: 1360px;
+                                border-radius: 20px 0px 20px 0px;
                             }
                             
                             header h1 {
@@ -36,7 +44,7 @@
                                 font-weight: 700;
                                 font-size: 2.4rem;
                                 text-align: center;
-                                margin-top: -5%;
+                                margin-top: -6%;
                                 margin-bottom: 60px;
                                 letter-spacing: 0.2em;
                                 text-shadow: 1px 1px 0.5px #000;
@@ -49,12 +57,15 @@
                                 }
                             }
                             
-                            #madeira {
-                                margin-top: 20px;
-                                height: 80px;
-                                max-width: 1360px;
-                                border-radius: 20px 0px 20px 0px;
+                            #titulo-cardapio {
+                                font-family: 'HighVoltage';
+                                font-weight: 900;
+                                font-size: 2.5rem;
+                                color: #EFF7FF;
+                                text-align: center;
+                                letter-spacing: 0.2em;
                             }
+                            /* __________________PARTE01 - BEBIDAS_______________________ */
                             
                             .Parte01 {
                                 width: 90%;
@@ -62,25 +73,17 @@
                                 margin: 0 auto;
                             }
                             
-                            #titulo-cardapio {
-                                font-family: 'HighVoltage';
-                                font-weight: 900;
-                                font-size: 1.5rem;
-                                color: #EFF7FF;
-                                text-align: center;
-                                letter-spacing: 0.2em;
-                            }
-                            
-                            .topo-descricao {
-                                background-color: #F4E04D;
+                            .fundo-branco {
+                                background-color: #EFF7FF;
                                 border-radius: 10px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
-                                padding: 0% 5%;
+                                margin-top: -10px;
+                                padding: 3% 5% 3% 5%;
                             }
                             
-                            .topo-descricao-salada {
+                            .topo-descricao {
                                 background-color: #F4E04D;
                                 border-radius: 10px;
                                 display: flex;
@@ -94,43 +97,26 @@
                                 font-size: 1.2rem;
                             }
                             
-                            .topo-descricao-salada h2 {
-                                color: #231123;
-                                font-size: 1.1rem;
-                            }
-                            
-                            .nomes-produtos-bebidas h3,
+                            .nomes-produtos h3,
                             .precos h3 {
                                 color: #231123;
                                 font-weight: 800;
                                 font-size: 1.1rem;
                                 margin: 10px 5px;
                             }
+                            /* __________RED BULL_________ */
                             
                             .precos-redbull h3 {
                                 color: #EFF7FF;
                                 font-weight: 800;
                                 font-size: 1.1rem;
-                                margin: 10px 5px;
-                                padding: 1% 5% 0% 0%;
+                                margin: 12px 5px;
                             }
                             
                             .precos,
                             .precos-redbull {
                                 background-color: #B14806;
                                 border-radius: 10px;
-                            }
-                            /* #preco-bebidas {
-        margin-top: 1px;
-    } */
-                            
-                            .fundo-branco {
-                                background-color: #EFF7FF;
-                                border-radius: 10px;
-                                display: flex;
-                                justify-content: space-between;
-                                margin-top: -10px;
-                                padding: 3% 5% 3% 5%;
                             }
                             
                             .energia-extra {
@@ -150,24 +136,24 @@
                                 display: flex;
                                 justify-content: space-between;
                                 margin-top: -10px;
-                                padding: 4% 5% 3% 5%;
+                                padding: 3% 5% 3% 5%;
                             }
                             
                             .precos-redbull img {
                                 align-items: center;
                             }
-                            /* .precos-redbull {} */
                             
                             .nomes-produtos-redbull h3 {
                                 color: #EFF7FF;
                                 font-weight: 800;
-                                font-size: 152%;
+                                font-size: 1.1rem;
                                 margin: 12px 5px;
                             }
                             
-                            #bolas {
-                                padding-left: 10px;
+                            #lata {
+                                margin-left: -5px;
                             }
+                            /* ________PARTE02 - SALADA DE FRUTA */
                             
                             .Parte02 {
                                 width: 90%;
@@ -196,6 +182,56 @@
                                 padding-bottom: 5px;
                             }
                             
+                            #img-banana {
+                                width: 30px;
+                                height: 30px;
+                                margin-left: 5px;
+                            }
+                            
+                            .topo-descricao-salada {
+                                background-color: #F4E04D;
+                                border-radius: 10px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                padding: 0% 5%;
+                            }
+                            
+                            .topo-descricao-salada h2 {
+                                color: #231123;
+                                font-size: 1.1rem;
+                            }
+                            
+                            hr {
+                                color: #fff;
+                            }
+                            /* ______________SUCOS____________ */
+                            
+                            .Parte04 {
+                                width: 90%;
+                                display: block;
+                                margin: 0 auto;
+                            }
+                            
+                            .titulos-caixas {
+                                text-align: center;
+                                color: #EFF7FF;
+                                font-size: 1.2rem;
+                            }
+                            
+                            .fundo-branco h6 {
+                                color: #231123;
+                                font-size: 1.2rem;
+                                margin: 0;
+                            }
+                            
+                            .grid {
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                gap: 10px;
+                            }
+                            /* ________FOOTER___________ */
+                            
                             footer {
                                 background-color: #C5D86D;
                                 width: 100%;
@@ -217,14 +253,5 @@
                             .texto-imagem {
                                 display: flex;
                                 align-items: center;
-                            }
-                            
-                            #img-banana {
-                                width: 30px;
-                                height: 30px;
-                                margin-left: 5px;
-                            }
-                            
-                            #lata {
-                                margin-left: -5px;
+                                justify-content: center;
                             }
