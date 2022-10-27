@@ -292,11 +292,11 @@
         }
         
         #preco1 {
-            padding-top: 5px;
+            padding-top: 10px;
         }
         
         #preco2 {
-            padding-bottom: 5px;
+            padding-bottom: 10px;
         }
         
         #img-banana {
@@ -383,7 +383,7 @@
             margin-top: -10px;
             padding: 3% 5% 3% 5%;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: space-between;
         }
         
         .fundo-verde-grid {
