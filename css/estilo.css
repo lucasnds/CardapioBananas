@@ -219,6 +219,7 @@
             align-items: center;
             margin-top: -10px;
             padding: 3% 5% 3% 5%;
+            grid-gap: 10px;
         }
         
         .fundo-branco-grid {
@@ -467,13 +468,12 @@
         .fundo-rosa {
             background-color: #EBC9EA;
             border-radius: 10px;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr 0.2fr 0.2fr;
             margin-top: -10px;
             padding: 3% 5% 3% 5%;
             align-items: center;
-            margin-bottom: 10%;
-            flex-direction: column;
+            grid-gap: 10px;
         }
         
         .topo-descricao-acai {
@@ -501,6 +501,7 @@
         .precos-acai {
             background-color: #C5D86D;
             border-radius: 10px;
+            text-align: center;
         }
         
         #suco-de-acai {
@@ -512,6 +513,10 @@
         
         .ml h6 {
             margin: 0;
+        }
+        
+        .ml h3 {
+            font-size: 1.5rem;
         }
         
         .texto-imagem {
