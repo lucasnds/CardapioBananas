@@ -224,7 +224,15 @@
             color: #231123;
             font-weight: 800;
             font-size: 1.5rem;
-            margin: 12% 0px;
+            margin: 14% 0px;
+        }
+        
+        .nomes-produtos p {
+            color: #4682B4;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-left: 1%;
+            margin-top: 0;
         }
         
         .precos-comum {
@@ -235,8 +243,20 @@
         .precos-comum h3 {
             color: #EFF7FF;
             font-weight: 800;
-            font-size: 1.5rem;
-            margin: 32% 5px;
+            font-size: 1.7rem;
+            margin: 30% 5px;
+        }
+        
+        .precos-promocao {
+            background-color: #B14806;
+            border-radius: 10px;
+        }
+        
+        .precos-promocao h3 {
+            color: #EFF7FF;
+            font-weight: 800;
+            font-size: 1.7rem;
+            margin: 66% 5px;
         }
         
         .precos {
@@ -247,8 +267,9 @@
         .precos h3 {
             color: #EFF7FF;
             font-weight: 800;
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             margin: 15px 5px;
+            text-align: center;
         }
         /* __________RED BULL_________ */
         
@@ -297,6 +318,14 @@
         
         #preco2 {
             padding-bottom: 10px;
+        }
+        
+        #preco-margin1 {
+            margin-top: 10px;
+        }
+        
+        #preco-margin2 {
+            margin-bottom: 10px;
         }
         
         #img-banana {
@@ -369,11 +398,19 @@
         }
         /* ____________PARTE 05 - SALGADOS */
         
-        .nomes-produtos p {
+        .nomes-produtos-especiais h3 {
+            color: #231123;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin: 5% 0px;
+        }
+        
+        .nomes-produtos-especiais p {
             color: #4682B4;
             font-size: 1.3rem;
             font-weight: 600;
             margin-left: 1%;
+            margin-top: 0;
         }
         
         .fundo-verde {
@@ -394,10 +431,6 @@
             margin-top: -10px;
             padding: 3% 5% 3% 5%;
             align-items: center;
-            /* display: flex;
-            justify-content: space-around;
-            /* flex-flow: row wrap;
-            align-items: stretch; */
         }
         /* ________PARTE08 -ACAI___________ */
         /* #EBC9EA  */
@@ -430,8 +463,8 @@
         
         .precos-acai h3 {
             color: #231123;
-            font-weight: 800;
-            font-size: 1.5rem;
+            font-weight: 700;
+            font-size: 1.7rem;
             margin: 12px 5px;
         }
         
