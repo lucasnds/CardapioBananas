@@ -93,7 +93,7 @@
         }
         
         input [type="checkbox-menu"]:checked~nav {
-            transform: translateX(display block);
+            transform: translateX(display block)
         }
         
         ul {
@@ -120,10 +120,15 @@
             gap: 10px;
         }
         
-        header img {
+        header {
             width: 95%;
+            margin: auto;
+            position: relative;
+        }
+        
+        header img {
+            width: 100%;
             align-items: center;
-            display: block;
             margin: 0 auto;
             margin-top: 3%;
             height: 80px;
@@ -137,10 +142,21 @@
             font-weight: 700;
             font-size: 4.0rem;
             text-align: center;
-            margin-top: -6%;
-            margin-bottom: 60px;
-            letter-spacing: 0.2em;
             text-shadow: 1px 1px 0.5px #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transition: translate(-50%, -50%);
+            letter-spacing: 0.1em;
+        }
+        
+        .centro {
+            margin: 0;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
         }
         
         @media (min-width:320px) and (max-width:500px) {
@@ -189,7 +205,17 @@
             background-color: #FFE4C4;
             border-radius: 10px;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr 0.2fr;
+            align-items: center;
+            margin-top: -10px;
+            padding: 3% 5% 3% 5%;
+        }
+        
+        .fundo-pastel-grid-3 {
+            background-color: #FFE4C4;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr 0.2fr 0.2fr;
             align-items: center;
             margin-top: -10px;
             padding: 3% 5% 3% 5%;
@@ -199,10 +225,11 @@
             background-color: #EFF7FF;
             border-radius: 10px;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr 0.2fr;
             align-items: center;
             margin-top: -10px;
             padding: 3% 5% 3% 5%;
+            grid-gap: 10px;
         }
         
         .topo-descricao {
@@ -223,7 +250,7 @@
         .nomes-produtos h3 {
             color: #231123;
             font-weight: 800;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             margin: 14% 0px;
         }
         
@@ -243,7 +270,7 @@
         .precos-comum h3 {
             color: #EFF7FF;
             font-weight: 800;
-            font-size: 1.7rem;
+            font-size: 1.9rem;
             margin: 30% 5px;
         }
         
@@ -255,7 +282,7 @@
         .precos-promocao h3 {
             color: #EFF7FF;
             font-weight: 800;
-            font-size: 1.7rem;
+            font-size: 1.9rem;
             margin: 66% 5px;
         }
         
@@ -267,7 +294,7 @@
         .precos h3 {
             color: #EFF7FF;
             font-weight: 800;
-            font-size: 1.7rem;
+            font-size: 1.9rem;
             margin: 15px 5px;
             text-align: center;
         }
@@ -276,11 +303,12 @@
         .fundo-roxo {
             background-color: #231123;
             border-radius: 10px;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr 0.2fr;
             margin-top: -10px;
             padding: 3% 5% 3% 5%;
             align-items: center;
+            grid-gap: 10px;
         }
         
         .precos-redbull img {
@@ -290,7 +318,7 @@
         .nomes-produtos-redbull h3 {
             color: #EFF7FF;
             font-weight: 800;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             margin: 15px 5px;
         }
         
@@ -302,7 +330,7 @@
         .copos h5 {
             color: #B14806;
             font-weight: 800;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             margin: 12px 5px;
             padding: 2.5px 0px;
         }
@@ -393,7 +421,7 @@
         .nomes-produtos-sucos h3 {
             color: #231123;
             font-weight: 800;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             margin: 9% 1%;
         }
         /* ____________PARTE 05 - SALGADOS */
@@ -401,7 +429,7 @@
         .nomes-produtos-especiais h3 {
             color: #231123;
             font-weight: 800;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             margin: 5% 0px;
         }
         
@@ -427,10 +455,11 @@
             background-color: #C5D86D;
             border-radius: 10px;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr 0.2fr;
             margin-top: -10px;
             padding: 3% 5% 3% 5%;
             align-items: center;
+            grid-gap: 10px;
         }
         /* ________PARTE08 -ACAI___________ */
         /* #EBC9EA  */
@@ -444,6 +473,7 @@
             padding: 3% 5% 3% 5%;
             align-items: center;
             margin-bottom: 10%;
+            flex-direction: column;
         }
         
         .topo-descricao-acai {
@@ -464,7 +494,7 @@
         .precos-acai h3 {
             color: #231123;
             font-weight: 700;
-            font-size: 1.7rem;
+            font-size: 1.9rem;
             margin: 12px 5px;
         }
         
@@ -496,11 +526,11 @@
             font-style: normal;
             color: rgb(224, 17, 17);
         }
-        /* .flex {
+        
+        .flex {
             display: flex;
-            justify-content: flex-end;
             align-items: center;
-        } */
+        }
         /* ________FOOTER___________ */
         
         footer {
