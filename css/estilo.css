@@ -1,31 +1,78 @@
-        @font-face {
-            font-family: 'HighVoltage';
-            src: url('../HighVoltage Rough.ttf') format('truetype');
-            font-style: normal;
-        }
-        
-        html {
-            font-size: 62.5%;
-        }
-        
-        body {
-            background-image: linear-gradient(#B14806, #361532);
-            margin: 0 auto;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
-            max-width: 1360px;
-        }
-        
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            text-shadow: 0.3px 0.3px 0.2px #000;
-        }
-        
-        .container {
+@font-face {
+    font-family: 'HighVoltage';
+    src: url('../HighVoltage Rough.ttf') format('truetype');
+    font-style: normal;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: linear-gradient(#B14806, #361532);
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    max-width: 1360px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-shadow: 0.3px 0.3px 0.2px #000;
+}
+
+header {
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 3%;
+    height: 80px;
+    max-width: 1360px;
+    border-radius: 20px 0px 20px 0px;
+}
+
+header h1 {
+    font-family: 'HighVoltage';
+    color: #F4E04D;
+    font-weight: 700;
+    font-size: 4.0rem;
+    text-align: center;
+    text-shadow: 1px 1px 0.5px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: translate(-50%, -50%);
+    letter-spacing: 0.1em;
+}
+
+.centro {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+@media (min-width:320px) and (max-width:500px) {
+    header h1 {
+        margin-top: -15%;
+        font-size: 2.7rem;
+    }
+}
+
+
+/* .container {
             height: 100%;
             display: flex;
             align-items: center;
@@ -118,443 +165,396 @@
             justify-content: flex-start;
             margin-left: 5%;
             gap: 10px;
-        }
-        
-        header {
-            width: 95%;
-            margin: auto;
-            position: relative;
-        }
-        
-        header img {
-            width: 100%;
-            align-items: center;
-            margin: 0 auto;
-            margin-top: 3%;
-            height: 80px;
-            max-width: 1360px;
-            border-radius: 20px 0px 20px 0px;
-        }
-        
-        header h1 {
-            font-family: 'HighVoltage';
-            color: #F4E04D;
-            font-weight: 700;
-            font-size: 4.0rem;
-            text-align: center;
-            text-shadow: 1px 1px 0.5px #000;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transition: translate(-50%, -50%);
-            letter-spacing: 0.1em;
-        }
-        
-        .centro {
-            margin: 0;
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%)
-        }
-        
-        @media (min-width:320px) and (max-width:500px) {
-            header h1 {
-                margin-top: -15%;
-                font-size: 2.7rem;
-            }
-        }
-        
-        #titulo-cardapio {
-            font-family: 'HighVoltage';
-            font-weight: 900;
-            font-size: 2.8rem;
-            color: #EFF7FF;
-            text-align: center;
-            letter-spacing: 0.2em;
-        }
-        /* __________________PARTE01 - BEBIDAS_______________________ */
-        
-        .Parte01,
-        .Parte02,
-        .Parte04,
-        .Parte06,
-        .Parte07,
-        .Parte08,
-        .Parte05,
-        .Parte03,
-        .Parte09,
-        .Parte10 {
-            width: 90%;
-            display: block;
-            margin: 0 auto;
-        }
-        
-        .fundo-pastel {
-            background-color: #FFE4C4;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            margin-top: -10px;
-            padding: 3% 5% 3% 5%;
-            justify-content: space-between;
-        }
-        
-        .fundo-pastel-grid {
-            background-color: #FFE4C4;
-            border-radius: 10px;
-            display: grid;
-            grid-template-columns: 1fr 0.2fr;
-            align-items: center;
-            margin-top: -10px;
-            padding: 3% 5% 3% 5%;
-        }
-        
-        .fundo-pastel-grid-3 {
-            background-color: #FFE4C4;
-            border-radius: 10px;
-            display: grid;
-            grid-template-columns: 1fr 0.2fr 0.2fr;
-            align-items: center;
-            margin-top: -10px;
-            padding: 3% 5% 3% 5%;
-            grid-gap: 10px;
-        }
-        
-        .fundo-branco-grid {
-            background-color: #EFF7FF;
-            border-radius: 10px;
-            display: grid;
-            grid-template-columns: 1fr 0.2fr;
-            align-items: center;
-            margin-top: -10px;
-            padding: 3% 5% 3% 5%;
-            grid-gap: 10px;
-        }
-        
-        .topo-descricao {
-            background-color: #F4E04D;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0% 5%;
-            margin-top: 5%;
-        }
-        
-        .topo-descricao h2 {
-            color: #231123;
-            font-size: 1.6rem;
-        }
-        
-        .nomes-produtos h3 {
-            color: #231123;
-            font-weight: 800;
-            font-size: 1.8rem;
-            margin: 14% 0px;
-        }
-        
-        .nomes-produtos p {
-            color: #4682B4;
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-left: 1%;
-            margin-top: 0;
-        }
-        
-        .precos-comum {
-            background-color: #B14806;
-            border-radius: 10px;
-        }
-        
-        .precos-comum h3 {
-            color: #EFF7FF;
-            font-weight: 800;
-            font-size: 1.9rem;
-            margin: 30% 5px;
-        }
-        
-        .precos-promocao {
-            background-color: #B14806;
-            border-radius: 10px;
-        }
-        
-        .precos-promocao h3 {
-            color: #EFF7FF;
-            font-weight: 800;
-            font-size: 1.9rem;
-            margin: 66% 5px;
-        }
-        
-        .precos {
-            background-color: #B14806;
-            border-radius: 10px;
-        }
-        
-        .precos h3 {
-            color: #EFF7FF;
-            font-weight: 800;
-            font-size: 1.9rem;
-            margin: 15px 5px;
-            text-align: center;
-        }
-        /* __________RED BULL_________ */
-        
-        .fundo-roxo {
-            background-color: #231123;
-            border-radius: 10px;
-            display: grid;
-            grid-template-columns: 1fr 0.2fr;
-            margin-top: -10px;
-            padding: 3% 5% 3% 5%;
-            align-items: center;
-            grid-gap: 10px;
-        }
-        
-        .precos-redbull img {
-            align-items: center;
-        }
-        
-        .nomes-produtos-redbull h3 {
-            color: #EFF7FF;
-            font-weight: 800;
-            font-size: 1.8rem;
-            margin: 15px 5px;
-        }
-        
-        #lata {
-            margin-left: -5px;
-        }
-        /* ________PARTE02 - SALADA DE FRUTA */
-        
-        .copos h5 {
-            color: #B14806;
-            font-weight: 800;
-            font-size: 1.6rem;
-            margin: 12px 5px;
-            padding: 2.5px 0px;
-        }
-        
-        .copos h5>span {
-            color: #231123;
-            font-weight: 800;
-        }
-        
-        #preco1 {
-            padding-top: 10px;
-        }
-        
-        #preco2 {
-            padding-bottom: 10px;
-        }
-        
-        #preco-margin1 {
-            margin-top: 10px;
-        }
-        
-        #preco-margin2 {
-            margin-bottom: 10px;
-        }
-        
-        #img-banana {
-            width: 30px;
-            height: 30px;
-            margin-left: 5px;
-        }
-        
-        .topo-descricao-salada {
-            background-color: #F4E04D;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0% 3%;
-            margin-top: 5%;
-        }
-        
-        .topo-descricao-salada h2 {
-            color: #231123;
-            font-size: 1.6rem;
-        }
-        
-        hr {
-            color: #fff;
-        }
-        /* ______________SUCOS____________ */
-        
-        .titulos-caixas {
-            text-align: center;
-            color: #EFF7FF;
-            font-size: 2.0rem;
-        }
-        
-        .fundo-branco h6 {
-            color: #231123;
-            font-size: 1.5rem;
-            margin: 0;
-        }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
-        
-        .grid h6 {
-            color: #361532;
-            font-weight: 800;
-            font-size: 1.5rem;
-            margin: 12px 5px;
-        }
-        
-        .volume h3 {
-            color: #EFF7FF;
-            font-weight: 800;
-            font-size: 1.5rem;
-            margin: 0;
-        }
-        
-        #suco-laranja {
-            margin-top: 25%;
-        }
-        
-        .nomes-produtos-sucos h3 {
-            color: #231123;
-            font-weight: 800;
-            font-size: 1.8rem;
-            margin: 9% 1%;
-        }
-        /* ____________PARTE 05 - SALGADOS */
-        
-        .nomes-produtos-especiais h3 {
-            color: #231123;
-            font-weight: 800;
-            font-size: 1.8rem;
-            margin: 5% 0px;
-        }
-        
-        .nomes-produtos-especiais p {
-            color: #4682B4;
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-left: 1%;
-            margin-top: 0;
-        }
-        
-        .fundo-verde {
-            background-color: #C5D86D;
-            border-radius: 10px;
-            display: flex;
-            margin-top: -10px;
-            padding: 3% 5% 3% 5%;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .fundo-verde-grid {
-            background-color: #C5D86D;
-            border-radius: 10px;
-            display: grid;
-            grid-template-columns: 1fr 0.2fr;
-            margin-top: -10px;
-            padding: 3% 5% 3% 5%;
-            align-items: center;
-            grid-gap: 10px;
-        }
-        /* ________PARTE08 -ACAI___________ */
-        /* #EBC9EA  */
-        
-        .fundo-rosa {
-            background-color: #EBC9EA;
-            border-radius: 10px;
-            display: grid;
-            grid-template-columns: 1fr 0.2fr 0.2fr;
-            margin-top: -10px;
-            padding: 3% 5% 3% 5%;
-            align-items: center;
-            grid-gap: 10px;
-        }
-        
-        .topo-descricao-acai {
-            background-color: #C5D86D;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0% 5%;
-            margin-top: 5%;
-        }
-        
-        .topo-descricao-acai h2 {
-            color: #231123;
-            font-size: 1.6rem;
-        }
-        
-        .precos-acai h3 {
-            color: #231123;
-            font-weight: 700;
-            font-size: 1.9rem;
-            margin: 12px 5px;
-        }
-        
-        .precos-acai {
-            background-color: #C5D86D;
-            border-radius: 10px;
-            text-align: center;
-        }
-        
-        #suco-de-acai {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 3% 5% 3% 5%;
-        }
-        
-        .ml h6 {
-            margin: 0;
-        }
-        
-        .ml h3 {
-            font-size: 1.5rem;
-        }
-        
-        .texto-imagem {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 5px;
-        }
-        
-        .fundo-branco-grid h5 {
-            font-size: 1.4rem;
-            font-style: normal;
-            color: rgb(224, 17, 17);
-        }
-        
-        .flex {
-            display: flex;
-            align-items: center;
-        }
-        /* ________FOOTER___________ */
-        
-        footer {
-            background-color: #C5D86D;
-            width: 100%;
-            padding: 20px;
-        }
-        
-        footer h6 {
-            text-align: center;
-        }
-        
-        footer a {
-            text-decoration: none;
-            color: #231123;
-            text-shadow: 0.5px 0.5px 0.5px#fff;
-            font-size: 1.3rem;
-            cursor: pointer;
-            font-weight: 700;
-            display: block;
-            text-align: center;
-        }
+        } */
+
+
+/* __________________PARTE01 - BEBIDAS_______________________ */
+
+.Parte01,
+.Parte02,
+.Parte04,
+.Parte06,
+.Parte07,
+.Parte08,
+.Parte05,
+.Parte03,
+.Parte09,
+.Parte10 {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* ____________________________FUNDOS______________________________ */
+
+.fundo-pastel {
+    background-color: #FFE4C4;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    padding: 3% 5% 3% 5%;
+    justify-content: space-between;
+}
+
+.fundo-pastel-grid {
+    background-color: #FFE4C4;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    align-items: center;
+    margin-top: -10px;
+    padding: 3% 5% 3% 5%;
+}
+
+.fundo-pastel-grid-3 {
+    background-color: #FFE4C4;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 0.2fr;
+    align-items: center;
+    margin-top: -10px;
+    padding: 3% 5% 3% 5%;
+    grid-gap: 10px;
+}
+
+.fundo-branco-grid {
+    background-color: #EFF7FF;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    align-items: center;
+    margin-top: -10px;
+    padding: 3% 5% 3% 5%;
+    grid-gap: 10px;
+}
+
+.fundo-roxo {
+    background-color: #231123;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    margin-top: -10px;
+    padding: 3% 5% 3% 5%;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.fundo-verde {
+    background-color: #C5D86D;
+    border-radius: 10px;
+    display: flex;
+    margin-top: -10px;
+    padding: 3% 5% 3% 5%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fundo-verde-grid {
+    background-color: #C5D86D;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    margin-top: -10px;
+    padding: 3% 5% 3% 5%;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.fundo-rosa {
+    background-color: #EBC9EA;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 0.2fr;
+    margin-top: -10px;
+    padding: 3% 5% 3% 5%;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.fundo-branco-grid h5 {
+    font-size: 1.4rem;
+    font-style: normal;
+    color: rgb(224, 17, 17);
+}
+
+.fundo-branco h6 {
+    color: #231123;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+
+/* ___________________________TOPOS_________________________ */
+
+.topo-descricao {
+    background-color: #F4E04D;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 5%;
+    margin-top: 5%;
+}
+
+.topo-descricao h2 {
+    color: #231123;
+    font-size: 1.6rem;
+}
+
+.topo-descricao-salada {
+    background-color: #F4E04D;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 3%;
+    margin-top: 5%;
+}
+
+.topo-descricao-salada h2 {
+    color: #231123;
+    font-size: 1.6rem;
+}
+
+.topo-descricao-acai {
+    background-color: #C5D86D;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 5%;
+    margin-top: 5%;
+}
+
+.topo-descricao-acai h2 {
+    color: #231123;
+    font-size: 1.6rem;
+}
+
+
+/* __________________NOMES PRODUTOS_______________ */
+
+.nomes-produtos h3 {
+    color: #231123;
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin: 14% 0px;
+}
+
+.nomes-produtos p {
+    color: #4682B4;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-left: 1%;
+    margin-top: 0;
+}
+
+.nomes-produtos-redbull h3 {
+    color: #EFF7FF;
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin: 15px 5px;
+}
+
+.nomes-produtos-sucos h3 {
+    color: #231123;
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin: 9% 1%;
+}
+
+.nomes-produtos-especiais h3 {
+    color: #231123;
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin: 5% 0px;
+}
+
+.nomes-produtos-especiais p {
+    color: #4682B4;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-left: 1%;
+    margin-top: 0;
+}
+
+.copos h5 {
+    color: #B14806;
+    font-weight: 800;
+    font-size: 1.6rem;
+    margin: 12px 5px;
+    padding: 2.5px 0px;
+}
+
+.copos h5>span {
+    color: #231123;
+    font-weight: 800;
+}
+
+
+/* __________________PREÇOS_______________ */
+
+.precos-comum {
+    background-color: #B14806;
+    border-radius: 10px;
+}
+
+.precos-comum h3 {
+    color: #EFF7FF;
+    font-weight: 800;
+    font-size: 1.9rem;
+    margin: 30% 5px;
+}
+
+.precos-promocao {
+    background-color: #B14806;
+    border-radius: 10px;
+}
+
+.precos-promocao h3 {
+    color: #EFF7FF;
+    font-weight: 800;
+    font-size: 1.9rem;
+    margin: 66% 5px;
+}
+
+.precos {
+    background-color: #B14806;
+    border-radius: 10px;
+}
+
+.precos h3 {
+    color: #EFF7FF;
+    font-weight: 800;
+    font-size: 1.9rem;
+    margin: 15px 5px;
+    text-align: center;
+}
+
+.precos-redbull img {
+    align-items: center;
+}
+
+#preco1 {
+    padding-top: 10px;
+}
+
+#preco2 {
+    padding-bottom: 10px;
+}
+
+#preco-margin1 {
+    margin-top: 10px;
+}
+
+#preco-margin2 {
+    margin-bottom: 10px;
+}
+
+.precos-acai h3 {
+    color: #231123;
+    font-weight: 700;
+    font-size: 1.9rem;
+    margin: 12px 5px;
+}
+
+.precos-acai {
+    background-color: #C5D86D;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/* ______________________FUNCIONALIDADES e TITULOS______________________ */
+
+#titulo-cardapio {
+    font-family: 'HighVoltage';
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: #EFF7FF;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+.titulos-caixas {
+    text-align: center;
+    color: #EFF7FF;
+    font-size: 2.0rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid h6 {
+    color: #361532;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin: 12px 5px;
+}
+
+.volume h3 {
+    color: #EFF7FF;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#suco-laranja {
+    margin-top: 25%;
+}
+
+#suco-de-acai {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 5% 3% 5%;
+}
+
+.ml h6 {
+    margin: 0;
+}
+
+.ml h3 {
+    font-size: 1.5rem;
+}
+
+.texto-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+/* ________FOOTER___________ */
+
+footer {
+    background-color: #C5D86D;
+    width: 100%;
+    padding: 20px;
+}
+
+footer h6 {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #231123;
+    text-shadow: 0.5px 0.5px 0.5px#fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+}
