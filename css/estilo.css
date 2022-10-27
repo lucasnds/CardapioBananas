@@ -1,519 +1,487 @@
-/* *,
-*::after,
-*::before {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-.html {
-    font-size: 62.5%;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
-}
-
-
-/* ///////////..utility classes../////////// */
-
-
-/* .container {
-    max-width: 1200px;
-    width: 90%;
-    margin: auto;
-}
-
-.btn {
-    display: inline-block;
-    padding: 0.5em 1.5em;
-    text-decoration: none;
-    border-radius: 50px;
-    cursor: pointer;
-    outline: none;
-    margin-top: 1em;
-    text-transform: uppercase;
-    font-weight: small;
-}
-
-.btn-primary {
-    color: #fff;
-    background: #16a083;
-}
-
-.btn-primary:hover {
-    background: #117964;
-    transition: background 0.3s ease-in-out;
-} */
-
-
-/* ............/navbar/............ *
-
-/* desktop mode............/// */
-
-
-/* 
-.navbar input[type="checkbox"],
-.navbar .hamburger-lines {
-    display: none;
-}
-
-.navbar {
-    box-shadow: 0px 5px 10px 0px #aaa;
-    position: fixed;
-    width: 100%;
-    background: #fff;
-    color: #000;
-    opacity: 0.85;
-    height: 50px;
-    z-index: 12;
-}
-
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    height: 64px;
-    align-items: center;
-}
-
-.menu-items {
-    order: 2;
-    display: flex;
-}
-
-.menu-items li {
-    list-style: none;
-    margin-left: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-}
-
-.menu-items a {
-    text-decoration: none;
-    color: #444;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
-}
-
-.menu-items a:hover {
-    color: #117964;
-    transition: color 0.3s ease-in-out;
-}
-
-.logo {
-    order: 1;
-    font-size: 2.3rem;
-    margin-bottom: 0.5rem;
-} */
-
-@font-face {
-    font-family: 'HighVoltage';
-    src: url('../HighVoltage Rough.ttf') format('truetype');
-    font-style: normal;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    background-image: linear-gradient(#B14806, #361532);
-    margin: 0 auto;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    max-width: 1360px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-shadow: 0.3px 0.3px 0.2px #000;
-}
-
-
-/* __________________GERAL_______________________ */
-
-nav ul a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-family: 'Inter';
-    color: #231123;
-    font-weight: 700;
-    padding: 0% 5%;
-    text-align: center;
-}
-
-nav ul a:hover {
-    color: #EFF7FF;
-}
-
-
-/* __________________HEADER_______________________ */
-
-header {
-    z-index: 1;
-}
-
-header img {
-    width: 95%;
-    align-items: center;
-    display: block;
-    margin: 0 auto;
-    margin-top: 3%;
-    height: 80px;
-    max-width: 1360px;
-    border-radius: 20px 0px 20px 0px;
-}
-
-header h1 {
-    font-family: 'HighVoltage';
-    color: #F4E04D;
-    font-weight: 700;
-    font-size: 4.0rem;
-    text-align: center;
-    margin-top: -6%;
-    margin-bottom: 60px;
-    letter-spacing: 0.2em;
-    text-shadow: 1px 1px 0.5px #000;
-}
-
-@media (min-width:320px) and (max-width:500px) {
-    header h1 {
-        margin-top: -15%;
-        font-size: 2.7rem;
-    }
-}
-
-#titulo-cardapio {
-    font-family: 'HighVoltage';
-    font-weight: 900;
-    font-size: 2.8rem;
-    color: #EFF7FF;
-    text-align: center;
-    letter-spacing: 0.2em;
-}
-
-
-/* __________________PARTE01 - BEBIDAS_______________________ */
-
-.Parte01,
-.Parte02,
-.Parte04,
-.Parte06,
-.Parte07,
-.Parte08,
-.Parte05,
-.Parte03,
-.Parte09,
-.Parte10 {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.fundo-pastel {
-    background-color: #FFE4C4;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    margin-top: -10px;
-    padding: 3% 5% 3% 5%;
-    justify-content: space-between;
-}
-
-.fundo-pastel-grid {
-    background-color: #FFE4C4;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    margin-top: -10px;
-    padding: 3% 5% 3% 5%;
-}
-
-.fundo-branco-grid {
-    background-color: #EFF7FF;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    margin-top: -10px;
-    padding: 3% 5% 3% 5%;
-}
-
-.topo-descricao {
-    background-color: #F4E04D;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0% 5%;
-    margin-top: 5%;
-}
-
-.topo-descricao h2 {
-    color: #231123;
-    font-size: 1.6rem;
-}
-
-.nomes-produtos h3 {
-    color: #231123;
-    font-weight: 800;
-    font-size: 1.5rem;
-    margin: 12px 0px;
-}
-
-.precos h3 {
-    color: #EFF7FF;
-    font-weight: 800;
-    font-size: 1.5rem;
-    margin: 12px 5px;
-}
-
-
-/* __________RED BULL_________ */
-
-.precos-redbull h3 {
-    color: #EFF7FF;
-    font-weight: 800;
-    font-size: 1.5rem;
-    margin: 12px 5px;
-}
-
-.precos,
-.precos-redbull {
-    background-color: #B14806;
-    border-radius: 10px;
-}
-
-.fundo-roxo {
-    background-color: #231123;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: -10px;
-    padding: 3% 5% 3% 5%;
-    align-items: center;
-}
-
-.precos-redbull img {
-    align-items: center;
-}
-
-.nomes-produtos-redbull h3 {
-    color: #EFF7FF;
-    font-weight: 800;
-    font-size: 1.5rem;
-    margin: 12px 5px;
-}
-
-#lata {
-    margin-left: -5px;
-}
-
-
-/* ________PARTE02 - SALADA DE FRUTA */
-
-.copos h5 {
-    color: #B14806;
-    font-weight: 800;
-    font-size: 1.5rem;
-    margin: 12px 5px;
-    padding: 2.5px 0px;
-}
-
-.copos h5>span {
-    color: #231123;
-    font-weight: 800;
-}
-
-#preco1 {
-    padding-top: 5px;
-}
-
-#preco2 {
-    padding-bottom: 5px;
-}
-
-#img-banana {
-    width: 30px;
-    height: 30px;
-    margin-left: 5px;
-}
-
-.topo-descricao-salada {
-    background-color: #F4E04D;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0% 3%;
-    margin-top: 5%;
-}
-
-.topo-descricao-salada h2 {
-    color: #231123;
-    font-size: 1.5rem;
-}
-
-hr {
-    color: #fff;
-}
-
-
-/* ______________SUCOS____________ */
-
-.titulos-caixas {
-    text-align: center;
-    color: #EFF7FF;
-    font-size: 2.0rem;
-}
-
-.fundo-branco h6 {
-    color: #231123;
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-
-.grid h6 {
-    color: #361532;
-    font-weight: 800;
-    font-size: 1.5rem;
-    margin: 12px 5px;
-}
-
-.volume h3 {
-    color: #EFF7FF;
-    font-weight: 800;
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-#suco-laranja {
-    margin-top: 25%;
-}
-
-.nomes-produtos-sucos h3 {
-    color: #231123;
-    font-weight: 800;
-    font-size: 1.5rem;
-    margin: 9% 1%;
-}
-
-
-/* ____________PARTE 05 - SALGADOS */
-
-.nomes-produtos p {
-    color: #4682B4;
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-left: 1%;
-}
-
-.fundo-verde {
-    background-color: #C5D86D;
-    border-radius: 10px;
-    display: flex;
-    margin-top: -10px;
-    padding: 3% 5% 3% 5%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.fundo-verde-grid {
-    background-color: #C5D86D;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: -10px;
-    padding: 3% 5% 3% 5%;
-    align-items: center;
-}
-
-
-/* ________PARTE08 -ACAI___________ */
-
-
-/* #EBC9EA  */
-
-.fundo-rosa {
-    background-color: #EBC9EA;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: -10px;
-    padding: 3% 5% 3% 5%;
-    align-items: center;
-    margin-bottom: 10%;
-}
-
-.topo-descricao-acai {
-    background-color: #C5D86D;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0% 5%;
-    margin-top: 5%;
-}
-
-.topo-descricao-acai h2 {
-    color: #231123;
-    font-size: 1.6rem;
-}
-
-.precos-acai h3 {
-    color: #231123;
-    font-weight: 800;
-    font-size: 1.5rem;
-    margin: 12px 5px;
-}
-
-.precos-acai {
-    background-color: #C5D86D;
-    border-radius: 10px;
-}
-
-#suco-de-acai {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3% 5% 3% 5%;
-}
-
-
-/* ________FOOTER___________ */
-
-footer {
-    background-color: #C5D86D;
-    width: 100%;
-}
-
-footer h6 {
-    text-align: center;
-    font-size: 110%;
-    margin: 20px 0px 0px 0px;
-    padding: 15px 0px;
-}
-
-footer h6 a {
-    text-decoration: none;
-    color: #231123;
-    text-shadow: 0.5px 0.5px 0.5px#fff;
-}
-
-.texto-imagem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
+        @font-face {
+            font-family: 'HighVoltage';
+            src: url('../HighVoltage Rough.ttf') format('truetype');
+            font-style: normal;
+        }
+        
+        html {
+            font-size: 62.5%;
+        }
+        
+        body {
+            background-image: linear-gradient(#B14806, #361532);
+            margin: 0 auto;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            max-width: 1360px;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-shadow: 0.3px 0.3px 0.2px #000;
+        }
+        
+        .container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #checkbox-menu {
+            position: absolute;
+            opacity: 0;
+        }
+        
+        label {
+            cursor: pointer;
+            position: relative;
+            display: block;
+            height: 22px;
+            width: 30px;
+            z-index: 2;
+        }
+        
+        label span {
+            position: absolute;
+            display: block;
+            height: 5px;
+            width: 100%;
+            border-radius: 30px;
+            background: #EFF7FF;
+            transition: 0.25s ease-in-out;
+        }
+        
+        label span:nth-child(1) {
+            top: 0;
+        }
+        
+        label span:nth-child(2) {
+            top: 8px;
+        }
+        
+        label span:nth-child(3) {
+            top: 16px;
+        }
+        
+        #checkbox-menu:checked+label span:nth-child(1) {
+            transform: rotate(-45deg);
+            top: 8px;
+        }
+        
+        #checkbox-menu:checked+label span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        #checkbox-menu:checked+label span:nth-child(3) {
+            transform: rotate(45deg);
+            top: 8px;
+        }
+        
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 75%;
+            position: absolute;
+            margin-top: -15%;
+            z-index: 1;
+            border-radius: 10px;
+            display: none;
+        }
+        
+        input [type="checkbox-menu"]:checked~nav {
+            transform: translateX(display block);
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            padding: 10% 5px;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        
+        .menu-cardapio {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-left: 5%;
+            gap: 10px;
+        }
+        
+        .fixed {
+            margin-top: 15%;
+        }
+        
+        header img {
+            width: 95%;
+            align-items: center;
+            display: block;
+            margin: 0 auto;
+            margin-top: 3%;
+            height: 80px;
+            max-width: 1360px;
+            border-radius: 20px 0px 20px 0px;
+        }
+        
+        header h1 {
+            font-family: 'HighVoltage';
+            color: #F4E04D;
+            font-weight: 700;
+            font-size: 4.0rem;
+            text-align: center;
+            margin-top: -6%;
+            margin-bottom: 60px;
+            letter-spacing: 0.2em;
+            text-shadow: 1px 1px 0.5px #000;
+        }
+        
+        @media (min-width:320px) and (max-width:500px) {
+            header h1 {
+                margin-top: -15%;
+                font-size: 2.7rem;
+            }
+        }
+        
+        #titulo-cardapio {
+            font-family: 'HighVoltage';
+            font-weight: 900;
+            font-size: 2.8rem;
+            color: #EFF7FF;
+            text-align: center;
+            letter-spacing: 0.2em;
+        }
+        /* __________________PARTE01 - BEBIDAS_______________________ */
+        
+        .Parte01,
+        .Parte02,
+        .Parte04,
+        .Parte06,
+        .Parte07,
+        .Parte08,
+        .Parte05,
+        .Parte03,
+        .Parte09,
+        .Parte10 {
+            width: 90%;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .fundo-pastel {
+            background-color: #FFE4C4;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            margin-top: -10px;
+            padding: 3% 5% 3% 5%;
+            justify-content: space-between;
+        }
+        
+        .fundo-pastel-grid {
+            background-color: #FFE4C4;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            margin-top: -10px;
+            padding: 3% 5% 3% 5%;
+        }
+        
+        .fundo-branco-grid {
+            background-color: #EFF7FF;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            margin-top: -10px;
+            padding: 3% 5% 3% 5%;
+        }
+        
+        .topo-descricao {
+            background-color: #F4E04D;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0% 5%;
+            margin-top: 5%;
+        }
+        
+        .topo-descricao h2 {
+            color: #231123;
+            font-size: 1.6rem;
+        }
+        
+        .nomes-produtos h3 {
+            color: #231123;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin: 12% 0px;
+        }
+        
+        .precos h3 {
+            color: #EFF7FF;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin: 32% 5px;
+        }
+        /* __________RED BULL_________ */
+        
+        .precos-redbull h3 {
+            color: #EFF7FF;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin: 12px 5px;
+        }
+        
+        .precos,
+        .precos-redbull {
+            background-color: #B14806;
+            border-radius: 10px;
+        }
+        
+        .fundo-roxo {
+            background-color: #231123;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: -10px;
+            padding: 3% 5% 3% 5%;
+            align-items: center;
+        }
+        
+        .precos-redbull img {
+            align-items: center;
+        }
+        
+        .nomes-produtos-redbull h3 {
+            color: #EFF7FF;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin: 12px 5px;
+        }
+        
+        #lata {
+            margin-left: -5px;
+        }
+        /* ________PARTE02 - SALADA DE FRUTA */
+        
+        .copos h5 {
+            color: #B14806;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin: 12px 5px;
+            padding: 2.5px 0px;
+        }
+        
+        .copos h5>span {
+            color: #231123;
+            font-weight: 800;
+        }
+        
+        #preco1 {
+            padding-top: 5px;
+        }
+        
+        #preco2 {
+            padding-bottom: 5px;
+        }
+        
+        #img-banana {
+            width: 30px;
+            height: 30px;
+            margin-left: 5px;
+        }
+        
+        .topo-descricao-salada {
+            background-color: #F4E04D;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0% 3%;
+            margin-top: 5%;
+        }
+        
+        .topo-descricao-salada h2 {
+            color: #231123;
+            font-size: 1.6rem;
+        }
+        
+        hr {
+            color: #fff;
+        }
+        /* ______________SUCOS____________ */
+        
+        .titulos-caixas {
+            text-align: center;
+            color: #EFF7FF;
+            font-size: 2.0rem;
+        }
+        
+        .fundo-branco h6 {
+            color: #231123;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        
+        .grid h6 {
+            color: #361532;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin: 12px 5px;
+        }
+        
+        .volume h3 {
+            color: #EFF7FF;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        
+        #suco-laranja {
+            margin-top: 25%;
+        }
+        
+        .nomes-produtos-sucos h3 {
+            color: #231123;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin: 9% 1%;
+        }
+        /* ____________PARTE 05 - SALGADOS */
+        
+        .nomes-produtos p {
+            color: #4682B4;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-left: 1%;
+        }
+        
+        .fundo-verde {
+            background-color: #C5D86D;
+            border-radius: 10px;
+            display: flex;
+            margin-top: -10px;
+            padding: 3% 5% 3% 5%;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .fundo-verde-grid {
+            background-color: #C5D86D;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: -10px;
+            padding: 3% 5% 3% 5%;
+            align-items: center;
+            /* display: flex;
+            justify-content: space-around;
+            flex-flow: row wrap;
+            align-items: stretch; */
+        }
+        /* ________PARTE08 -ACAI___________ */
+        /* #EBC9EA  */
+        
+        .fundo-rosa {
+            background-color: #EBC9EA;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: -10px;
+            padding: 3% 5% 3% 5%;
+            align-items: center;
+            margin-bottom: 10%;
+        }
+        
+        .topo-descricao-acai {
+            background-color: #C5D86D;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0% 5%;
+            margin-top: 5%;
+        }
+        
+        .topo-descricao-acai h2 {
+            color: #231123;
+            font-size: 1.6rem;
+        }
+        
+        .precos-acai h3 {
+            color: #231123;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin: 12px 5px;
+        }
+        
+        .precos-acai {
+            background-color: #C5D86D;
+            border-radius: 10px;
+        }
+        
+        #suco-de-acai {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3% 5% 3% 5%;
+        }
+        
+        .ml h6 {
+            margin: 0;
+        }
+        
+        .texto-imagem {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        
+        .fundo-branco-grid h5 {
+            font-size: 1.4rem;
+            font-style: normal;
+            color: rgb(224, 17, 17);
+        }
+        /* ________FOOTER___________ */
+        
+        footer {
+            background-color: #C5D86D;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        footer h6 {
+            text-align: center;
+        }
+        
+        footer a {
+            text-decoration: none;
+            color: #231123;
+            text-shadow: 0.5px 0.5px 0.5px#fff;
+            font-size: 1.3rem;
+            cursor: pointer;
+            font-weight: 700;
+            display: block;
+            text-align: center;
+        }
