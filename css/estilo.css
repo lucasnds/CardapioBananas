@@ -90,7 +90,7 @@ header h1 {
 }
 
 #toggle {
-    -webkit-appearance: none;
+    display: none;
 }
 
 .button {
@@ -144,14 +144,13 @@ header h1 {
     opacity: 1;
     transition: all 0.5s ease-in-out;
     background: rgba(255, 255, 255, 0.95);
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
     transform: translateY(0%);
     box-shadow: 2px 3px 10px #000;
     border: 1px solid rgba(15, 15, 15, 0.755);
     padding: 10px;
     margin-top: 130px;
-    margin-right: 1.1rem;
 }
 
 @media (min-width:850px) and (max-width:1450px) {
@@ -182,6 +181,7 @@ header h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 1.6rem;
+    scroll-behavior: smooth;
 }
 
 .nav a:hover {
@@ -552,6 +552,7 @@ header h1 {
     font-weight: 800;
     font-size: 1.5rem;
     margin: 0;
+    text-align: center;
 }
 
 #suco-laranja {
@@ -567,13 +568,14 @@ header h1 {
 
 .ml h6 {
     margin: 0;
+    text-align: center;
 }
 
 .ml h3 {
     font-size: 1.5rem;
     color: #231123;
-    align-items: center;
     margin: 0;
+    text-align: center;
 }
 
 .texto-imagem {
