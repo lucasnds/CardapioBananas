@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -104,6 +105,7 @@ header h1 {
     justify-content: center;
     align-items: center;
     top: 11rem;
+    box-shadow: 1.8px 1px#000;
 }
 
 @media (min-width:850px)and (max-width:1450px) {
@@ -196,7 +198,7 @@ header h1 {
 }
 
 #toggle:checked~.button:after {
-    transform: rotate(-270deg);
+    transform: rotate(-90deg);
 }
 
 
@@ -238,6 +240,7 @@ header h1 {
     align-items: center;
     margin-top: -10px;
     padding: 3% 5% 3% 5%;
+    grid-gap: 10px;
 }
 
 .fundo-pastel-grid-3 {
@@ -372,7 +375,7 @@ header h1 {
     color: #231123;
     font-weight: 800;
     font-size: 1.8rem;
-    margin: 14% 0px;
+    margin: 15px 0px;
 }
 
 .nomes-produtos p {
@@ -568,6 +571,9 @@ header h1 {
 
 .ml h3 {
     font-size: 1.5rem;
+    color: #231123;
+    align-items: center;
+    margin: 0;
 }
 
 .texto-imagem {
