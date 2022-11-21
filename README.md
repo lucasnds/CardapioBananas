@@ -1,1 +1,1 @@
-https://bananasburguers.netlify.app/#Bebidas
+https://bananasburguers.netlify.app/
